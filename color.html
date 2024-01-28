@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #e8c7c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .box{
+      width: 402px;
+      height: 402px;
+      color: #fff;
+      border: 2px solid #000;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+#a{
+    width: 200px;
+    height: 200px;
+    border:2px solid #000;
+    border-radius: 3px;
+   
+  }
+
+#b{
+    width: 200px;
+    height: 200px;
+    border:2px solid #000;
+    border-radius: 3px;
+  }
+
+#c{
+    width: 200px;
+    height: 200px;
+    border:2px solid #000;
+    border-radius: 3px;
+  }
+
+#d{
+    width: 200px;
+    height: 200px;
+    border:2px solid #000;
+    border-radius: 3px;
+  }
+    </style>
+</head>
+<body>
+  <main>
+   <div class="box">
+    <div>
+   <div id="a"></div>
+   <div id="b"></div>
+</div>
+  <div>
+   <div id="c"></div>
+   <div id="d"></div>
+    </div>
+</div>
+</main>
+    <script>
+   var div = document.getElementById( 'a' );
+ 
+    div.onmouseover = function() {
+  this.style.backgroundColor = 'green';
+    }
+    div.onmouseout = function() {
+  this.style.backgroundColor = 'transparent';
+    }
+    var div1=document.getElementById('b');
+    div1.onmouseover=function(){
+        this.style.backgroundColor='red';
+    }
+    div1.onmouseout=function(){
+        this.style.backgroundColor = 'transparent';
+    }
+    var div1=document.getElementById('c');
+    div1.onmouseover=function(){
+        this.style.backgroundColor='yellow';
+    }
+    div1.onmouseout=function(){
+        this.style.backgroundColor = 'transparent';
+    }
+
+    var div1=document.getElementById('d');
+    div1.onmouseover=function(){
+        this.style.backgroundColor='orange';
+    }
+    div1.onmouseout=function(){
+        this.style.backgroundColor = 'transparent';
+    }
+    
+    </script>
+</body>
+</html>
